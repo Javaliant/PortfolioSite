@@ -1,0 +1,88 @@
+/* Author: Luigi Vincent
+ * #75715E - comment color
+ * #666664 - untabbled color*/
+
+ * {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-color: #272822;
+	color: #F3F3F3;
+}
+
+hr {
+	color: #666664;
+}
+
+#name {
+	font-size: 20px;
+	margin: 3px;
+	margin-bottom: 0px;
+}
+
+#header {
+	font-size: 5.4em;
+}
+
+#copyright {
+	text-align: center;
+}
+
+#logo {
+	margin-left: 275px;
+	width: 80px;
+}
+#logo:hover {
+	transform: scale(1.1);
+}
+#logo:active {
+	transform: scale(0.9);
+}
+
+td {
+	max-width: 400px;
+}
+td img {
+	margin: 5px;
+}
+
+.navigation {
+	list-style-type: none;
+	float: right;
+	margin-top: 52px;
+}
+.navigation li {
+	display: inline;
+}
+.navigation li a {
+	text-decoration: none;
+	color: #F3F3F3;
+	font-size: 20px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.navigation li a:visited {
+	color: #75715E;
+}
+.navigation li a:hover {
+	color: #A6E22E;
+	font-size:20.5px;
+}
+.navigation li a:active {
+	font-size: 18px;
+}
+
+#contacts {
+	text-align: center;
+}
+#contacts img {
+	max-width: 35px;
+	opacity: 0.5;
+}
+#contacts img:hover {
+	opacity: 1;
+}
+#contacts img:active {
+	max-width: 33px;
+}

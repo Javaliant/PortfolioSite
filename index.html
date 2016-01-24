@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--Author: Luigi Vincent
+TODO:
+Add more projects.
+Add project styling effects:
+Darken hovered one and show title + description
+on click use modal to go to project page.
+Opacity for all other elements when above occurs.
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Luigi Vincent / Software Developer"/>
+		<meta name="keywords" content="Computer Science, Kean University, Luigi Vincent, Software Developer, Code"/>
+		<meta name="robots" content="index, follow"/>
+		<title>Luigi Vincent</title>
+		<script src="apex.js"></script>
+		<link rel="stylesheet" type="text/css" href="apex.css"/>
+		<link rel="shortcut icon" href="assets/icon.ico"/>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	</head>
+
+	<header>
+		<span id="name">Luigi Vincent / Software Developer</span>
+		<span id="home"><a href="index.html">
+			<img id="logo" src="assets/home.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Home">
+		</a></span>
+		<ul class="navigation">
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="projects.html">PROJECTS</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>	
+	</header>
+
+	<hr color=#666664>
+
+	<body>
+		<h1 id="header"><div>I'm a Computer Science Major<div>& I'm passionate about <div id="passions">Solving Problems</div>
+		</h1>
+	</body>
+
+	<table>
+		<tr>
+			<td><img class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/tictactics.png"></td>
+			<td><img class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/htmlsaver.png"></td>
+			<td><img class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/simonsays.png"></td>
+			<td><img class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/pokeval.png"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+	<hr color=#666664>
+
+	<div id="contacts">
+	<a title="Code Review Profile" href="http://codereview.stackexchange.com/users/49181/legato"><img src="assets/codereview_icon.png"></a>
+	<a title="Github Profile" href="https://github.com/Javaliant"><img src="assets/github_icon.png"></a>
+	<a title="LinkedIn Profile" href="index.html"><img src="assets/linked_in_icon.png"></a>
+	</div>
+
+	<footer>
+		<div id="copyright">© 2016 Luigi Vincent</div>
+	</footer>
+</html>
