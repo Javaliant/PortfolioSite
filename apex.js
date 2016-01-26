@@ -11,9 +11,28 @@ var passions = [
 ];
 var passionIterator = 1;
 var projects = document.getElementsByClassName("projects");
+var scrollVisible = false;
+var userScrolled = false;
 
 window.onload = function() {
 	setInterval(iteratePassions, 4000);
+
+	window.onscroll = function() {
+		userScrolled = true;
+	}
+	
+	setInterval(function() {
+	    if(userScrolled) {
+	    	if (window.pageYOffset == 0 && scrollVisible) {
+	    		document.getElementById("scrollbutton").style.visibility = 'hidden';
+	    		scrollVisible = false;
+	    	} else if (!scrollVisible) {
+	    		document.getElementById("scrollbutton").style.visibility = 'visible';
+	    		scrollVisible = true;
+	    	}
+	        userScrolled = false;
+	    }
+	}, 100);
 }
 
 function iteratePassions() {
@@ -37,6 +56,13 @@ function projectUnhover() {
 	for (var i = 0; i < projects.length; i++) {
 		projects[i].style.opacity = 1;
 	}
+}
+
+function scrollHover(element) {
+	element.setAttribute('src', 'assets/scroll_arrow_hover.png');
+}
+function scrollUnhover(element) {
+	element.setAttribute('src', 'assets/scroll_arrow.png');
 }
 
 function fadeIn(passion) {
@@ -65,4 +91,8 @@ function iterate(passion) {
 	if (passionIterator == passions.length) {
 		passionIterator = 0;
 	}
+}
+
+function scrollUp() {
+	scrollTo(0, 0);
 }

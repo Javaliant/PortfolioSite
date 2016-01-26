@@ -5,6 +5,11 @@ Add more projects.
 Add project styling effects:
 Darken hovered one and show title + description
 on click use modal to go to project page.
+also use modal for contacts
+separate page for about
+separate page for projects (not sure what this should be yet)
+
+group and aphabetize css as well as js functions
 -->
 <html>
 	<head>
@@ -25,8 +30,8 @@ on click use modal to go to project page.
 			<img id="logo" src="assets/home.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Home">
 		</a></span>
 		<ul class="navigation">
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="projects.html">PROJECTS</a></li>
+			<li><a class="navitrast" href="about.html">ABOUT</a></li>
+			<li><a class="navitrast" href="projects.html">PROJECTS</a></li>
 			<li><a href="contact.html">CONTACT</a></li>
 		</ul>	
 	</header>
@@ -36,19 +41,20 @@ on click use modal to go to project page.
 	<body>
 		<h1 id="header"><div>I'm a Computer Science Major<div>& I'm passionate about <div id="passions">Solving Problems</div>
 		</h1>
+		<input type="image" id="scrollbutton" src="assets/scroll_arrow.png" onmouseover="scrollHover(this);" onmouseout="scrollUnhover(this);" onclick="scrollUp();"/>
 	</body>
 
 	<table>
 		<tr>
-			<td><img class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/tictactics.png"></td>
-			<td><img class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/htmlsaver.png"></td>
-			<td><img class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/simonsays.png"></td>
-			<td><img class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/pokeval.png"></td>
+			<td><input type="image" class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/tictactics.png"></td>
+			<td><input type="image" class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/htmlsaver.png"></td>
+			<td><input type="image" class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/simonsays.png"></td>
+			<td><input type="image" class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/pokeval.png"></td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><input type="image" class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/hack_kean.png"></td>
+			<td><input type="image" class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/raspi.png"></td>
+			<td><input type="image" class="projects" onmouseover="projectHover(this);" onmouseout="projectUnhover()" src="assets/chatter.png"></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -64,7 +70,7 @@ on click use modal to go to project page.
 	<div id="contacts">
 	<a title="Code Review Profile" href="http://codereview.stackexchange.com/users/49181/legato"><img src="assets/codereview_icon.png"></a>
 	<a title="Github Profile" href="https://github.com/Javaliant"><img src="assets/github_icon.png"></a>
-	<a title="LinkedIn Profile" href="index.html"><img src="assets/linked_in_icon.png"></a>
+	<a title="LinkedIn Profile" href="https://www.linkedin.com/in/luigi-vincent-b82254103"><img src="assets/linked_in_icon.png"></a>
 	</div>
 
 	<footer>

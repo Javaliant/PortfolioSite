@@ -1,6 +1,6 @@
 /* Author: Luigi Vincent
- * #75715E - comment color
- * #666664 - untabbled color*/
+ * #75715E - optional contrast color
+ * #666664 - contrast color*/
 
  * {
 	font-family: 'Montserrat', sans-serif;
@@ -43,8 +43,15 @@ hr {
 td {
 	max-width: 400px;
 }
-td img {
+td input {
 	margin: 5px;
+}
+
+#scrollbutton {
+	position: fixed;
+	visibility: hidden;
+    bottom: 0;
+    right: 0;
 }
 
 .navigation {
@@ -62,15 +69,15 @@ td img {
 	padding-left: 3px;
 	padding-right: 3px;
 }
-.navigation li a:visited {
+.navitrast:visited {
 	color: #75715E;
 }
 .navigation li a:hover {
 	color: #A6E22E;
-	font-size:20.5px;
+	font-size: 20.5px;
 }
 .navigation li a:active {
-	font-size: 18px;
+	font-size: 19px;
 }
 
 #contacts {
