@@ -1,2 +1,41 @@
 <!DOCTYPE html>
-My Projects page.
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Luigi Vincent / Software Developer"/>
+		<meta name="keywords" content="Computer Science, Kean University, Luigi Vincent, Software Developer, Code"/>
+		<meta name="robots" content="index, follow"/>
+		<title>Projects / Luigi Vincent</title>
+		<script src="base.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<link rel="shortcut icon" href="assets/icon.ico"/>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	</head>
+
+	<header>
+		<span id="name">Luigi Vincent / Software Developer</span>
+		<span id="home"><a href="index.html">
+			<img id="logo" src="assets/home.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Home">
+		</a></span>
+		<ul class="navigation">
+			<li><a class="navitrast" href="about.html">ABOUT</a></li>
+			<li><a class="navitrast" href="projects.html">PROJECTS</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+		<input type="image" id="scrollbutton" src="assets/scroll_arrow.png" onmouseover="scrollHover(this);" onmouseout="scrollUnhover(this);" onclick="scrollUp();"/>
+		<hr color=#666664>
+	</header>
+
+	<h1>My Projects page.</h1>
+
+	<footer>
+		<hr color=#666664>
+		<div id="contacts">
+		<a title="Code Review Profile" target="_blank" href="http://codereview.stackexchange.com/users/49181/legato"><img src="assets/codereview_icon.png"></a>
+		<a title="Github Profile" target="_blank" href="https://github.com/Javaliant"><img src="assets/github_icon.png"></a>
+		<a title="Codeeval Profile" target="_blank" href="https://www.codeeval.com/profile/Javaliant/"><img src="assets/codeeval_icon.png"></a>
+		<a title="LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/luigi-vincent-b82254103"><img src="assets/linked_in_icon.png"></a>
+		</div>
+		<div id="copyright">© 2016 Luigi Vincent</div>
+	</footer>
+</html>

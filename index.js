@@ -1,4 +1,6 @@
-/* Author: Luigi Vincent */
+/* Author: Luigi Vincent 
+functions exclusive to index page
+*/
 
 var passions = [
 	"Solving Problems",
@@ -11,58 +13,32 @@ var passions = [
 ];
 var passionIterator = 1;
 var projects = document.getElementsByClassName("projects");
-var scrollVisible = false;
-var userScrolled = false;
 
-window.onload = function() {
+window.addEventListener('load', init, false);
+
+function init() {
 	setInterval(iteratePassions, 4000);
 
-	window.onscroll = function() {
-		userScrolled = true;
+	for (var i = 0; i < projects.length; i++) {
+		projects[i].addEventListener('mouseover', projectHover, false);
+		projects[i].addEventListener('mouseout', projectUnhover, false);
 	}
-	
-	setInterval(function() {
-	    if(userScrolled) {
-	    	if (window.pageYOffset == 0 && scrollVisible) {
-	    		document.getElementById("scrollbutton").style.visibility = 'hidden';
-	    		scrollVisible = false;
-	    	} else if (!scrollVisible) {
-	    		document.getElementById("scrollbutton").style.visibility = 'visible';
-	    		scrollVisible = true;
-	    	}
-	        userScrolled = false;
-	    }
-	}, 100);
 }
 
 function iteratePassions() {
 	fadeOut(document.getElementById("passions"));
 }
 
-function hover(element) {
-	element.setAttribute('src', 'assets/hover_home.png');
-}
-function unhover(element) {
-    element.setAttribute('src', 'assets/home.png');
-}
-
-function projectHover(element) {
+function projectHover() {
 	for (var i = 0; i < projects.length; i++) {
 		projects[i].style.opacity = 0.3;
 	}
-	element.style.opacity = 1;
+	this.style.opacity = 1;
 }
 function projectUnhover() {
 	for (var i = 0; i < projects.length; i++) {
 		projects[i].style.opacity = 1;
 	}
-}
-
-function scrollHover(element) {
-	element.setAttribute('src', 'assets/scroll_arrow_hover.png');
-}
-function scrollUnhover(element) {
-	element.setAttribute('src', 'assets/scroll_arrow.png');
 }
 
 function fadeIn(passion) {
@@ -91,8 +67,4 @@ function iterate(passion) {
 	if (passionIterator == passions.length) {
 		passionIterator = 0;
 	}
-}
-
-function scrollUp() {
-	scrollTo(0, 0);
 }

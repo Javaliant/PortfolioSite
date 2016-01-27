@@ -29,14 +29,14 @@ hr {
 	text-align: center;
 }
 
-#logo {
+#home {
 	margin-left: 275px;
 	width: 80px;
 }
-#logo:hover {
+#home:hover {
 	transform: scale(1.1);
 }
-#logo:active {
+#home:active {
 	transform: scale(0.9);
 }
 
@@ -78,6 +78,16 @@ td input {
 }
 .navigation li a:active {
 	font-size: 19px;
+}
+
+#resume {
+	text-decoration: none;
+	font-size: 20px;
+	padding: 2px;
+	color: #A6E22E;
+}
+#resume:hover {
+	text-decoration: underline;
 }
 
 #contacts {
