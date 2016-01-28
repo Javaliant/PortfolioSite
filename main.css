@@ -3,7 +3,7 @@
  * #666664 - contrast color*/
 
  * {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Georgia', sans-serif;
 }
 
 body {
@@ -15,10 +15,18 @@ hr {
 	color: #666664;
 }
 
+#this {
+	font-size: 4em;
+	margin-left: 1.2em;
+}
+
+#this:hover {
+	color: #A6E22E;
+	cursor: pointer;
+}
+
 #name {
-	font-size: 20px;
-	margin: 3px;
-	margin-bottom: 0px;
+	font-size: 1.25em;
 }
 
 #header {
@@ -30,8 +38,8 @@ hr {
 }
 
 #home {
-	margin-left: 275px;
-	width: 80px;
+	margin-left: 17.5em;
+	width: 5em;
 }
 #home:hover {
 	transform: scale(1.1);
@@ -41,10 +49,10 @@ hr {
 }
 
 td {
-	max-width: 400px;
+	max-width: 25em;
 }
 td input {
-	margin: 5px;
+	margin: 0.5em;
 }
 
 #scrollbutton {
@@ -57,7 +65,7 @@ td input {
 .navigation {
 	list-style-type: none;
 	float: right;
-	margin-top: 52px;
+	margin-top: 3.25em;
 }
 .navigation li {
 	display: inline;
@@ -65,19 +73,18 @@ td input {
 .navigation li a {
 	text-decoration: none;
 	color: #F3F3F3;
-	font-size: 20px;
-	padding-left: 3px;
-	padding-right: 3px;
+	font-size: 1.25em;
+	padding-left: 0.15em;
+	padding-right: 0.15em;
 }
 .navitrast:visited {
 	color: #75715E;
 }
 .navigation li a:hover {
 	color: #A6E22E;
-	font-size: 20.5px;
 }
 .navigation li a:active {
-	font-size: 19px;
+	font-size: 1.2em;
 }
 
 #resume {
@@ -94,12 +101,12 @@ td input {
 	text-align: center;
 }
 #contacts img {
-	max-width: 35px;
+	max-width: 2em;
 	opacity: 0.5;
 }
 #contacts img:hover {
 	opacity: 1;
 }
 #contacts img:active {
-	max-width: 33px;
+	max-width: 1.9em;
 }
