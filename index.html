@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <!--Author: Luigi Vincent
 TODO:
 Modularize my js scripts
@@ -25,15 +25,16 @@ Consider adding codeeval site in footer
 		<title>Luigi Vincent</title>
 		<script src="index.js"></script>
 		<script src="base.js"></script>
-		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<link rel="stylesheet" type="text/css" href="base.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
 		<link rel="shortcut icon" href="assets/icon.ico"/>
 	</head>
 
 	<header>
 		<span id="name">Luigi Vincent / Software Architect</span>
-		<span><a href="index.html">
+		<a href="index.html">
 			<img id="home" src="assets/home.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt="Home"/>
-		</a></span>
+		</a>
 		<ul class="navigation">
 			<li><a class="navitrast" href="about.html">ABOUT</a></li>
 			<li><a class="navitrast" href="projects.html">PROJECTS</a></li>
@@ -44,10 +45,54 @@ Consider adding codeeval site in footer
 	</header>
 
 	<body>
-		<h1 id="header">I'm a Computer Scientist. <br/>I'm passionate about <br/><span id="passions">Solving Problems</span>.
+		<h1 id="header">I'm a Computer Scientist <br/>I'm passionate about <br/><span id="passions">Solving Problems</span>
 		</h1>
+		<div class="accordion">
+		    <ul>
+		        <li>
+		            <input type="radio" name="select" class="accordion-select" checked />
+		            <div class="accordion-title">
+		                <span>Project Description</span>
+		            </div>
+		            <div class="accordion-content">
+		                This very website being showcased before your eyes.
+		            </div>
+		            <div class="accordion-separator"></div>
+		        </li>
+		        <li>
+		            <input type="radio" name="select" class="accordion-select" />
+		            <div class="accordion-title">
+		                <span>Motivation</span>
+		            </div>
+		            <div class="accordion-content">
+		            	<ul>
+		            		<li>To create a portfolio site that displays one message above all: I am a learner.</li>
+		            		<li>To create all functions myself, no dependencies.</li>
+		            		<li>To display my skills in action.</li>
+
+		            	</ul>
+		            </div>
+		            <div class="accordion-separator"></div>
+		        </li>
+		        <li>
+		            <input type="radio" name="select" class="accordion-select" />
+		            <div class="accordion-title">
+		                <span>Lessons Learned</span>
+		            </div>
+		            <div class="accordion-content">
+		                <ul>
+		            		<li>A lot of JavaScript specifics and how to overcome them.</li>
+		            		<li>How much can be accomplished with just CSS.</li>
+		            		<li>How PHP, AJAX and MySQL can greatly facilitate dynamic content delivery.</li>
+		            	</ul>
+		            </div>
+		            <div class="accordion-separator"></div>
+		        </li>
+		    </ul>
+		</div>
 	</body>
 
+	<br/><br/><br/><br/><br/><br/><br/>
 	<table>
 		<tr>
 			<td><input type="image" class="projects" src="assets/tictactics.png"></td>

@@ -1,6 +1,9 @@
 /* Author: Luigi Vincent
  * #75715E - optional contrast color
- * #666664 - contrast color*/
+ * #666664 - contrast color
+ * #FD971F - sublime orange
+ * #A6E22E - sublime green
+ */
 
  * {
 	font-family: 'Georgia', sans-serif;
@@ -15,22 +18,12 @@ hr {
 	color: #666664;
 }
 
-#this {
-	font-size: 4em;
-	margin-left: 1.2em;
-}
-
-#this:hover {
-	color: #A6E22E;
-	cursor: pointer;
-}
-
 #name {
-	font-size: 1.25em;
+	font-size: 1.5em;
 }
 
 #header {
-	font-size: 5.4em;
+	font-size: 5.55em;
 }
 
 #copyright {
@@ -38,14 +31,14 @@ hr {
 }
 
 #home {
-	margin-left: 17.5em;
+	margin-left: 15em;
 	width: 5em;
 }
 #home:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 #home:active {
-	transform: scale(0.9);
+	transform: scale(1);
 }
 
 td {
@@ -65,7 +58,7 @@ td input {
 .navigation {
 	list-style-type: none;
 	float: right;
-	margin-top: 3.25em;
+	margin-top: 3.4em;
 }
 .navigation li {
 	display: inline;
@@ -84,7 +77,8 @@ td input {
 	color: #A6E22E;
 }
 .navigation li a:active {
-	font-size: 1.2em;
+	position: relative;
+	top: 0.05em;
 }
 
 #resume {
@@ -96,7 +90,6 @@ td input {
 #resume:hover {
 	text-decoration: underline;
 }
-
 #contacts {
 	text-align: center;
 }
@@ -108,5 +101,6 @@ td input {
 	opacity: 1;
 }
 #contacts img:active {
-	max-width: 1.9em;
+	position: relative;
+	bottom: .05em;
 }

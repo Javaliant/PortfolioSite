@@ -5,11 +5,11 @@ functions exclusive to index page
 var passions = [
 	"Solving Problems",
 	"Playing Piano",
-	"Code Review",
-	"Service",
+	"Education",
 	"Raspberry Pi",
 	"Conquering Challenges",
-	"Education"
+	"Code Review",
+	"Service"
 ];
 var passionIterator = 1;
 var projects = document.getElementsByClassName("projects");
@@ -22,6 +22,7 @@ function init() {
 	for (var i = 0; i < projects.length; i++) {
 		projects[i].addEventListener('mouseover', projectHover, false);
 		projects[i].addEventListener('mouseout', projectUnhover, false);
+		projects[i].addEventListener('click', projectClick, false);
 	}
 }
 
@@ -39,6 +40,9 @@ function projectUnhover() {
 	for (var i = 0; i < projects.length; i++) {
 		projects[i].style.opacity = 1;
 	}
+}
+function projectClick() {
+	console.log("project has been clicked!");
 }
 
 function fadeIn(passion) {
