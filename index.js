@@ -18,6 +18,7 @@ window.addEventListener('load', init, false);
 
 function init() {
 	setInterval(iteratePassions, 4000);
+	document.getElementById("overlay").addEventListener('click', projectExit, false);
 
 	for (var i = 0; i < projects.length; i++) {
 		projects[i].addEventListener('mouseover', projectHover, false);
@@ -42,7 +43,12 @@ function projectUnhover() {
 	}
 }
 function projectClick() {
-	console.log("project has been clicked!");
+	document.getElementById("project-info").style.display = "block";
+	document.getElementById("overlay").style.zIndex = 0;
+}
+function projectExit() {
+	document.getElementById("project-info").style.display = "none";
+	document.getElementById("overlay").style.zIndex = -1;
 }
 
 function fadeIn(passion) {
