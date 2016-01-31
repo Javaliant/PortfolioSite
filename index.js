@@ -43,8 +43,9 @@ function projectUnhover() {
 	}
 }
 function projectClick() {
+	document.getElementById("project-description").checked = true;
 	document.getElementById("project-info").style.display = "block";
-	document.getElementById("overlay").style.zIndex = 0;
+	document.getElementById("overlay").style.zIndex = 0;	
 }
 function projectExit() {
 	document.getElementById("project-info").style.display = "none";
