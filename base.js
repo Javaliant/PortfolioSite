@@ -1,30 +1,25 @@
 /* Author: Luigi Vincent
-functions I want on every page
+functions on every page
 */
 
-var scrollVisible = false;
-var userScrolled = false;
-
-window.addEventListener('load', init, false);
-
-function init() {
-	window.addEventListener('scroll', function() {
-		userScrolled = true;
-	}, false);
-	
-	setInterval(function() {
-	    if(userScrolled) {
-	    	if (window.pageYOffset == 0 && scrollVisible) {
-	    		document.getElementById("scrollbutton").style.visibility = 'hidden';
-	    		scrollVisible = false;
-	    	} else if (!scrollVisible) {
-	    		document.getElementById("scrollbutton").style.visibility = 'visible';
-	    		scrollVisible = true;
-	    	}
-	        userScrolled = false;
-	    }
-	}, 100);
+function pageIsTop() {
+	return window.pageYOffset == 0;
 }
+function buttonInvisble() {
+	return document.body.className.indexOf('at-top') >= 0;
+}
+function togglePageUpButton() {
+    if (pageIsTop() != buttonInvisble()) {
+        if (window.pageYOffset == 0) {
+            document.body.className += ' at-top';
+        } else {
+            document.body.className = document.body.className.replace(/ *at-top/, '');
+        }
+    }
+}
+
+window.addEventListener('load', togglePageUpButton, false);
+window.addEventListener('scroll', togglePageUpButton, false);
 
 function scrollUp() {
 	scrollTo(0, 0);

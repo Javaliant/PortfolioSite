@@ -50,9 +50,14 @@ td input {
 
 #scrollbutton {
 	position: fixed;
-	visibility: hidden;
     bottom: 0;
     right: 0;
+}
+#scrollbutton:active {
+	outline: none;
+}
+body.at-top #scrollbutton {
+	visibility: hidden;
 }
 
 .navigation {

@@ -20,27 +20,27 @@
     left: 23em;
     display: none;
     -webkit-animation-name: animate-info;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.5s;
     animation-name: animate-info;
-    animation-duration: 0.4s
+    animation-duration: 0.5s;
 }
 
 @-webkit-keyframes animate-info {
     from {
-        top: -18.75em;
+        /*top: -18.75em;*/
         opacity: 0;
     } to {
-        top: 0;
+       /* top: 0;*/
         opacity: 1;
     }
 }
 
 @keyframes animate-info {
     from {
-        top: -18.75em;
+       /* top: -18.75em;*/
         opacity: 0;
     } to {
-        top: 0;
+       /* top: 0;*/
         opacity: 1;
     }
 }

@@ -1,19 +1,14 @@
 	<!DOCTYPE html>
 <!--Author: Luigi Vincent
 TODO:
-Modularize my js scripts
-create template for each portal
-Add more projects.
-Add project styling effects:
-Darken hovered one and show title + description
-on click use modal to go to project page.
-also use modal for contacts
-separate page for about
-separate page for projects (not sure what this should be yet)
-
-group and aphabetize css as well as js functions
-
-Consider adding codeeval site in footer
+	Add more projects.
+	make separate page for about
+	Add project styling effects:
+	add php, ajax, sql to fill project information modals
+	also use modal for contacts
+Consider:
+	Darken hovered on projects and show title + description
+	separate page for projects - consider how.
 -->
 
 <html>
@@ -40,7 +35,7 @@ Consider adding codeeval site in footer
 			<li><a class="navitrast" href="projects.html">PROJECTS</a></li>
 			<li><a href="contact.html">CONTACT</a></li>
 		</ul>
-		<input type="image" id="scrollbutton" src="assets/scroll_arrow.png" onmouseover="scrollHover(this);" onmouseout="scrollUnhover(this);" onclick="scrollUp();"/>
+		<input type="image" id="scrollbutton" src="assets/scroll_arrow.png" onmouseover="scrollHover(this);" onmouseout="scrollUnhover(this);" onclick="scrollUp();" alt="Up"/>
 		<hr color=#666664>
 	</header>
 
@@ -93,16 +88,16 @@ Consider adding codeeval site in footer
 		</div>
 		<table>
 			<tr>
-				<td><input type="image" class="projects" src="assets/tictactics.png"></td>
-				<td><input type="image" class="projects" src="assets/htmlsaver.png"></td>
-				<td><input type="image" class="projects" src="assets/simonsays.png"></td>
-				<td><input type="image" class="projects" src="assets/pokeval.png"></td>
+				<td><input type="image" class="projects" title="Ultimate Tic-Tac-Toe" src="assets/tictactics.png"></td>
+				<td><input type="image" class="projects" title="HTML Saver" src="assets/htmlsaver.png"></td>
+				<td><input type="image" class="projects" title="Simon Says" style="border-radius: 28%;" src="assets/simonsays.png"></td>
+				<td><input type="image" class="projects" title="Pokemon Type Evaluator" src="assets/pokeval.png"></td>
 			</tr>
 			<tr>
-				<td><input type="image" class="projects" src="assets/hack_kean.png"></td>
-				<td><input type="image" class="projects" src="assets/raspi.png"></td>
+				<td><input type="image" class="projects" title="KeanHack 2nd place winner" src="assets/hack_kean.png"></td>
+				<td><input type="image" class="projects" title="Raspberry Pi Funk Button" src="assets/raspi.png"></td>
 				<td><a id="this" class="projects" title="This website">this</a></td>
-				<td><input type="image" class="projects" src="assets/chatter.png"></td>
+				<td><input type="image" class="projects" title="A chat client and server" src="assets/chatter.png"></td>
 			</tr>
 		</table>
 	</body>
