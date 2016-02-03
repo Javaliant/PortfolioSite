@@ -27,20 +27,20 @@
 
 @-webkit-keyframes animate-info {
     from {
-        /*top: -18.75em;*/
+        bottom: -8em;
         opacity: 0;
     } to {
-       /* top: 0;*/
+        bottom: 8em;
         opacity: 1;
     }
 }
 
 @keyframes animate-info {
     from {
-       /* top: -18.75em;*/
+        bottom: -8em;
         opacity: 0;
     } to {
-       /* top: 0;*/
+        bottom: 8em;
         opacity: 1;
     }
 }
