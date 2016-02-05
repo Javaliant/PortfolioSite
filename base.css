@@ -46,7 +46,6 @@ hr {
 
 #home {
 	margin-left: 15em;
-	width: 5em;
 }
 #home:hover {
 	transform: scale(1.05);
@@ -102,8 +101,7 @@ body.at-top #scrollbutton {
 
 #resume {
 	text-decoration: none;
-	font-size: 20px;
-	padding: 2px;
+	font-size: 1.5em;
 	color: #A6E22E;
 }
 #resume:hover {
