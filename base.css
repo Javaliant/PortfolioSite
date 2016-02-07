@@ -54,13 +54,6 @@ hr {
 	transform: scale(1);
 }
 
-td {
-	max-width: 25em;
-}
-td input {
-	margin: 0.5em;
-}
-
 #scrollbutton {
 	position: fixed;
     bottom: 0;
