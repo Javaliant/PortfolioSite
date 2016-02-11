@@ -4,11 +4,12 @@ functions exclusive to index page
 
 var passions = [
 	"Solving Problems",
-	"Playing Piano",
-	"Education",
+	"Health",
 	"Raspberry Pi",
 	"Conquering Challenges",
+	"Playing Piano",
 	"Code Review",
+	"Education",
 	"Service"
 ];
 var passionIterator = 1;
