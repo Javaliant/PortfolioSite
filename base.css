@@ -94,11 +94,14 @@ body.at-top #scrollbutton {
 .quote {
 	text-align: center;
 }
-#resume {
+.important {
+	color: #A6E22E;
+}
+.link {
 	text-decoration: none;
 	color: #A6E22E;
 }
-#resume:hover {
+.link:hover {
 	text-decoration: underline;
 }
 #contacts {
