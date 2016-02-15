@@ -219,8 +219,8 @@ function projectDescribe(project) {
 		case "pi-time":
 			piTime.showInformation();
 		break;
-		case "chater":
-			chater.showInformation();
+		case "chatter":
+			chatter.showInformation();
 		break;
 		case "violin-tuner":
 			violinTuner.showInformation();
