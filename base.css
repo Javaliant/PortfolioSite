@@ -32,6 +32,48 @@ hr {
 	color: #666664;
 }
 
+.input {
+	background-color: #666664;
+	border: 0;
+}
+.input:focus {
+	background-color: #F3F3F3;
+	outline: none !important;
+	box-shadow:  0 0 10px #A6E22E;
+}
+
+#submit {
+	cursor: pointer;
+	background-color: #666664;
+	color: #F3F3F3;
+	border-radius: 7px;
+}
+#submit:hover {
+	box-shadow:  0 0 10px #A6E22E;
+}
+#submit:active {
+	color: #A6E22E;
+}
+.label {
+	font-weight: bold;
+}
+.skill {
+	padding: 0.5em;
+	margin: 0.2em;
+	border: 0.1em solid #666664;
+}
+#skill-set {
+	width: 50%;
+	float: left;
+}
+#about-me {
+	width: 50%;
+	float: right;
+}
+#end {
+	width: 100%;
+	clear: both;
+}
 #name {
 	font-size: 1.5em;
 }

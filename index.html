@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-<!--Author: Luigi Vincent
-TODO:
-	Add more projects.
-	make separate page for about
-	Add project styling effects:
-	add php, ajax, sql to fill project information modals
-	also use modal for contacts
-Consider:
-	Darken hovered on projects and show title + description
-	separate page for projects - consider how.
--->
-
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -35,7 +22,7 @@ Consider:
 		</a>
 		<ul class="navigation">
 			<li><a class="navitrast" href="about.html">ABOUT</a></li>
-			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="contact.php">CONTACT</a></li>
 		</ul>
 		<input type="image" id="scrollbutton" src="assets/scroll_arrow.png" onmouseover="scrollHover(this);" onmouseout="scrollUnhover(this);" onclick="scrollUp();" alt="Up"/>
 		<hr color=#666664>
@@ -53,14 +40,11 @@ Consider:
 		                <span>Project Description</span>
 		            </div>
 		            <div class="accordion-content">
-		                <div id="project-title">This very website being showcased before your eyes.</div><br>
+		                <div id="project-title"></div><br>
 		                <ul id="project-breakdown">
-		                	<li>All functions personally designed with no dependencies.</li>
-		                	<li>Employs: HTML, CSS, JavaScript, AJAX, PHP and MySQL</li>
-		                	<li>Independently hosted on a Raspberry Pi.</li>
 		                </ul>
 		                <br>
-		                See it on <a id=project-github class="link" title="project on Github" target="_blank" href="https://github.com/Javaliant/PortfolioSite">Github</a>.
+		                See it on <a id=project-github class="link" title="project on Github" target="_blank" href="">Github</a>.
 		            </div>
 		            <div class="accordion-separator"></div>
 		        </li>
@@ -71,8 +55,6 @@ Consider:
 		            </div>
 		            <div class="accordion-content">
 		            	<ul id="project-motivation">
-		            		<li>To create a portfolio site that portrays one message above all: <span class="important">I am a learner.</span></li>
-		            		<li>To illustrate my skills and willingness to learn.</li>
 		            	</ul>
 		            </div>
 		            <div class="accordion-separator"></div>
@@ -84,9 +66,6 @@ Consider:
 		            </div>
 		            <div class="accordion-content">
 		                <ul id="project-lessons">
-		            		<li>Overcoming the idiosyncrasies that come with JavaScript</li>
-		            		<li>The impressive power of pure CSS.</li>
-		            		<li>How PHP, AJAX and MySQL harmonize to deliver dynamic content.</li>
 		            	</ul>
 		            </div>
 		            <div class="accordion-separator"></div>
@@ -95,16 +74,16 @@ Consider:
 		</div>
 		<table>
 			<tr>
-				<td><input type="image" class="projects" title="Ultimate Tic-Tac-Toe" src="assets/tictactics.png"></td>
-				<td><input type="image" class="projects" title="HTML Saver" src="assets/htmlsaver.png"></td>
-				<td><input type="image" class="projects" title="Simon Says" style="border-radius: 28%;" src="assets/simonsays.png"></td>
-				<td><input type="image" class="projects" title="Pokemon Type Evaluator" src="assets/pokeval.png"></td>
+				<td><input id="tic-tactics" type="image" class="projects" title="Ultimate Tic-Tac-Toe" src="assets/tictactics.png"></td>
+				<td><input id="html-saver" type="image" class="projects" title="HTML Saver" src="assets/htmlsaver.png"></td>
+				<td><input id="simon-says" type="image" class="projects" title="Simon Says" style="border-radius: 28%;" src="assets/simonsays.png"></td>
+				<td><input id ="poke-eval" type="image" class="projects" title="Pokemon Type Evaluator" src="assets/pokeval.png"></td>
 			</tr>
 			<tr>
-				<td><input type="image" class="projects" title="A Violin Tuner" src="assets/violin.png"></td>
-				<td><input type="image" class="projects" title="Raspberry Pi Party Button" src="assets/raspi.png"></td>
+				<td><input id="violin-tuner" type="image" class="projects" title="A Violin Tuner" src="assets/violin.png"></td>
+				<td><input id="pi-time" type="image" class="projects" title="Raspberry Pi Party Button" src="assets/raspi.png"></td>
 				<td><a id="this" class="projects" title="This website">this</a></td>
-				<td><input type="image" class="projects" title="A chat client and server" src="assets/chatter.png"></td>
+				<td><input id="chatter" type="image" class="projects" title="A chat client and server" src="assets/chatter.png"></td>
 			</tr>
 		</table>
 	</body>

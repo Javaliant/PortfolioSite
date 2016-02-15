@@ -20,14 +20,34 @@
 		</a></span>
 		<ul class="navigation">
 			<li><a class="navitrast" href="about.html">ABOUT</a></li>
-			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="contact.php">CONTACT</a></li>
 		</ul>
 		<input type="image" id="scrollbutton" src="assets/scroll_arrow.png" onmouseover="scrollHover(this);" onmouseout="scrollUnhover(this);" onclick="scrollUp();"/>
 		<hr color=#666664>
 	</header>
 	
 	<body>
-		My contact page.
+		<form style="text-align: center;" method:"post" action="contact.php">
+			<div><span class="label">Subject</span><br><input class="input" name="subject" type="text" required="required"></div>
+			<div><span class="label">Email</span><br><input class="input" name="email" type="text" required="required"></div>
+			<div><span class="label">Message</span><br><textarea class="input" name="message" rows="10" cols="80"></textarea></div>
+			<div><input type="submit"  id="submit" name="submit" value="Submit"></div>
+		</form>
+		<?php
+			if (isset($_POST["submit"])) {
+				$subject = $_POST['subject'];
+				$email = $_POST['email'];
+				$message = $_POST['message'];
+				$to = 'luigipvincent@gmail+website.com';
+				$body = "From: $email\n Message:\n $message"
+				 if (mail($to, $subject, $body)) {
+			        $result = 'Thank you. I will be in touch.';
+			    } else {
+			        $result = 'Sorry, there was an error, please try again later.';
+			    }
+			}
+			echo $result;
+		?>
 	</body>
 
 	<footer>
