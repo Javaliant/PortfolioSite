@@ -109,7 +109,7 @@ var ticTactics = new Project(
 var pokeEval = new Project(
 	"PokeEval, a Pokemon type evaluator.", [
 		"A way to assess Pokemon's type weaknesses and strengths.",
-		"Created using Java, JavaFX."
+		"Created using Java."
 	], [
 		"For the sake of practice and learning.",
 		"Eliminating the need to memorize over 700+ pokemon, and the specifics of types and types combinations."
