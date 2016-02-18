@@ -119,9 +119,11 @@ var pokeEval = new Project(
 	], "PokEvaluator"
 );
 
-var piTime = new Project(
-	"PiTime, a party button.", [
+var piStarter = new Project(
+	"PiStarter, a Raspberry Pi Event Trigger.", [
 		"Button that communicates with another computer to run a routine, visual feedback in terms of LED.",
+		"Currently configured to open command prompt, Sublime Text, and a to-code playlist",
+		"Configurable by time and day",
 		"Created using Python and Java with a Raspberry Pi."
 	], [
 		"To introduce self to computer and electronic engineering.",
@@ -129,7 +131,7 @@ var piTime = new Project(
 	], [
 		"The methods of creating and supporting socket communications via Python.",
 		"The intricacies of how hardware interacts with software."
-	], "PiTime"
+	], "PiStarter"
 );
 
 var chatter = new Project(
@@ -217,7 +219,7 @@ function projectDescribe(project) {
 			pokeEval.showInformation();
 		break;
 		case "pi-time":
-			piTime.showInformation();
+			piStarter.showInformation();
 		break;
 		case "chatter":
 			chatter.showInformation();
