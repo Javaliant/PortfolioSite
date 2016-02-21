@@ -27,22 +27,23 @@
 		</header>	
 	
 		<form style="text-align: center;" method="post" action="contact.php">
-			<div><span class="label">Subject</span><br><input class="input" name="subject" type="text" required="required"></div>
-			<div><span class="label">Email</span><br><input class="input" name="email" type="text" required="required"></div>
-			<div><span class="label">Message</span><br><textarea class="input" name="message" rows="10" cols="80"></textarea></div>
+			<div><span class="label">Subject</span><br><input class="input" name="subject" type="text" required="required" autocorrect="off" autocapitalize="sentences"></div>
+			<div><span class="label">Email</span><br><input class="input" name="email" type="email" required="required" autocorrect="off" autocapitalize="words"></div>
+			<div><span class="label">Message</span><br><textarea class="input" name="message" rows="10" cols="80" autocorrect=off autocapitalize="sentences"></textarea></div>
 			<div><input type="submit"  id="submit" name="submit" value="Submit"></div>
 		</form>
+		
 		<?php
 			if (isset($_POST["submit"])) {
 				$subject = $_POST['subject'];
 				$email = $_POST['email'];
 				$message = $_POST['message'];
-				$to = 'luigipvincent+website@gmail.com';
+				$to = '8628231747@messaging.sprintpcs.com';
 				$body = "From: $email\n Message:\n $message";
 				 if (mail($to, $subject, $body)) {
-			        echo 'Thank you. I will be in touch.';
+			        echo '<span class="important">Thank you. I will be in touch.</span>';
 			    } else {
-			        echo 'Sorry, there was an error, please try again later.';
+			        echo '<span class="notify">Sorry, there was an error. Please try again later.</span>';
 			    }
 			}
 		?>

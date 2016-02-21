@@ -32,6 +32,10 @@ hr {
 	color: #666664;
 }
 
+input, textarea, img {
+	max-width: 100%;
+}
+
 .input {
 	background-color: #666664;
 	border: 0;
@@ -91,7 +95,7 @@ hr {
 }
 
 #home {
-	margin-left: 15em;
+	margin-left: 16.5em;
 }
 #home:hover {
 	transform: scale(1.05);
@@ -142,6 +146,9 @@ body.at-top #scrollbutton {
 }
 .important {
 	color: #A6E22E;
+}
+.notify {
+	color: #FD971F;
 }
 .link {
 	text-decoration: none;
