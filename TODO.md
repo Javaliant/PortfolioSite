@@ -1,6 +1,5 @@
 - Work on contact page.
-	o Make Email work.
-	o Make reply/send from @luigivincent.com extension.
+	o Replies from @luigivincent.com extension.
 	o Consider using modal rather than separate page.
 - Improve about page presentation + appearance.
 	o Add awards / distinctions.
