@@ -1,5 +1,2 @@
 next
-ProjectRelationalModel.md
-*.json
-Procfile
-.sync
+test
