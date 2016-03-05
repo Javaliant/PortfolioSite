@@ -6,7 +6,7 @@
 		<meta name="robots" content="index, follow"/>
 		<meta name="author" content="Luigi Vincent"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>About / Luigi Vincent</title>
+		<title>Contact / Luigi Vincent</title>
 		<script src="base.js"></script>
 		<link rel="stylesheet" href="base.css"/>
 		<link rel="shortcut icon" href="assets/icon.ico"/>
